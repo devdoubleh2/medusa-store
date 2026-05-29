@@ -19,6 +19,5 @@ docker-compose up -d
 CircleCI builds and pushes Docker images on `main` branch, then triggers Dokploy deployment.
 
 ### Required CircleCI env vars:
-- `DOCKER_USERNAME`
-- `DOCKER_PASSWORD`
+- `GHCR_TOKEN` (GitHub PAT with `write:packages`)
 - `DOKPLOY_WEBHOOK_URL`
